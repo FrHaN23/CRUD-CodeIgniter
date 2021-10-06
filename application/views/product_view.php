@@ -27,8 +27,11 @@
                 <tr>
                     <th scope="row"><?php echo $count ?></th>
                     <td><?php echo $row->product_name; ?></td>
-                    <td><?php echo number_format($row->product_price);?></td>
-                    <td><a href="<?php echo site_url('product/delete/'.$row->product_id);?> " class="btn btn-sm btn-danger">Delete</a></td>
+                    <td><?php echo number_format($row->product_price,0,",",".");?></td>
+                        <td><a href="<?php echo site_url('product/get_edit/'.$row->product_id);?>" class="btn btn-sm btn-info">Update</a>
+                            <a href="<?php echo site_url('product/delete/'.$row->product_id);?> " class="btn btn-sm btn-danger">Delete</a>
+                        </td>
+                    
                 </tr>
                 <?php endforeach; ?>
         </table>
