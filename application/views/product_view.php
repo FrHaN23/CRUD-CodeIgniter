@@ -34,6 +34,9 @@
                     
                 </tr>
                 <?php endforeach; ?>
+                <tr>
+                    <th colspan="4"><a href="product/add_new/" class="btn btn-success">Add</a></th>
+                </tr>
         </table>
     </div>
 </body>
